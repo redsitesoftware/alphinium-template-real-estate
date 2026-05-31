@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "PropFind",
+    "slug": "real-estate",
+    "version": "1.0.0",
+    "backgroundColor": "#F0F4FF",
+    "primaryColor": "#1A56DB",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "PropFind",
+      "description": "AI-assisted property search platform",
+      "themeColor": "#0891B2",
+      "lang": "en"
+    },
+    "android": {
+      "package": "com.redsitesoftware.realEstate"
+    },
+    "ios": {
+      "bundleIdentifier": "com.redsitesoftware.realEstate"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cbb96266-cda7-417f-b290-8593fc04308b"
+      }
+    },
+    "owner": "zx10r06",
+    "description": "AI-assisted property search platform"
+  }
+}
