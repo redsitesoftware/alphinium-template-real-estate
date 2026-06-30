@@ -7,6 +7,8 @@ import PropertyDetailScreen from '../screens/PropertyDetailScreen';
 import InspectionScreen from '../screens/InspectionScreen';
 import { colors } from '../data/propertyData';
 
+import EnquiryScreen from '../screens/EnquiryScreen';
+
 const Stack = createStackNavigator();
 
 export default function AppNavigator() {
@@ -24,6 +26,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Properties" component={PropertyListScreen} />
         <Stack.Screen name="Property Detail" component={PropertyDetailScreen} />
         <Stack.Screen name="Inspection" component={InspectionScreen} />
+        <Stack.Screen name="Enquiry" component={EnquiryScreen} options={{ title: 'Enquire' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

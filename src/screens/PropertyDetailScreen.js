@@ -40,6 +40,10 @@ export default function PropertyDetailScreen({ navigation, route }) {
           <Text style={styles.primaryButtonText}>Book Inspection</Text>
         </Pressable>
 
+        <Pressable style={styles.secondaryButton} onPress={() => navigation.navigate('Enquiry', { property })}>
+          <Text style={styles.secondaryButtonText}>✉️ Enquire About This Property</Text>
+        </Pressable>
+
         <View style={styles.agentCard}>
           <View style={styles.agentAvatar}><Text style={styles.agentAvatarText}>{property.agent.name.split(' ').map((part) => part[0]).join('')}</Text></View>
           <View>
@@ -71,6 +75,8 @@ const styles = StyleSheet.create({
   feature: { color: colors.text, fontSize: 15, lineHeight: 24 },
   primaryButton: { backgroundColor: colors.primary, paddingVertical: 16, borderRadius: 18, alignItems: 'center' },
   primaryButtonText: { color: colors.surface, fontWeight: '800', fontSize: 15 },
+  secondaryButton: { backgroundColor: colors.surfaceAlt, paddingVertical: 16, borderRadius: 18, alignItems: 'center', borderWidth: 1, borderColor: colors.border },
+  secondaryButtonText: { color: colors.text, fontWeight: '700', fontSize: 15 },
   agentCard: { flexDirection: 'row', alignItems: 'center', gap: 14, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border, borderRadius: 24, padding: 18 },
   agentAvatar: { width: 52, height: 52, borderRadius: 26, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center' },
   agentAvatarText: { color: colors.surface, fontWeight: '800', fontSize: 18 },
